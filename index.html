@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <title>CryptoFox</title>
+</head>
+<body>
+    
+    <main class="principal">
+        <section class="main-section">
+            <section class="principal-content">
+                <header>
+                    <img class ="logo" src="./assets/spy-fox-logo.png" alt="Logo raposa em modo espião" >
+                </header>
+
+                <div class="txt-box">
+                    <textarea class="txt-box-element" placeholder="Digite seu texto..." ></textarea>
+                </div>
+                <div class="input-group">
+                    <div class="info">
+                        <p>Apenas letras minúsculas e sem acento.</p>
+                    </div>
+                    <div>
+                        <input type="button" value="Criptografar" class="btn-general encrypt-btn" onclick="encryptText()">
+                        <input class="btn-general" type="button" value="Descriptografar" onclick="decryptText()">
+                    </div>
+                </div>
+            </section>
+
+            <aside class="aside-content">
+                <div class="content">
+                    <img src="./assets/fox-mel.png" class="img-txt-info" alt="Imagem que informa a ausência de mensagem" width="200">
+                    <textarea id="txt-result" readonly></textarea>
+                    <h1 class="txt-title">Nenhuma mensagem encontrada</h1>
+                    <p class="txt-info">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+                <div class="copy-container">
+                    <input type="button" value="Copiar" class="btn-general copy-btn" onclick="copyText()">
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <p>2024 - Meliza Maia</p>
+
+    </footer>
+    <script src="./scripts/codificar.js"></script>
+</body>
+</html>
